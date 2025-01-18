@@ -1,0 +1,185 @@
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container for landing page */
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Landing Section */
+#landing {
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left half (Text content) */
+.left-half {
+    width: 50%;
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Left half text: Increase size */
+.left-half h1 {
+    font-size: 3rem;
+}
+
+.left-half p {
+    font-size: 1.2rem;
+}
+
+/* Right half (Photo content) */
+.right-half {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+}
+
+/* Profile photo */
+.profile-photo img {
+    width: 150%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Hidden sections */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a.btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+a.btn:hover {
+    background-color: #218838;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+#backToFirstPageBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #28a745;
+    color: white;
+}
+
+#backToFirstPageBtn:hover {
+    background-color: #218838;
+}
+/* Ensure footer is at the bottom */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Add space at the bottom of the contact section */
+#contact {
+    padding-bottom: 60px; /* or adjust as needed */
+}
+
+/* Fix the 'Back to First Page' button visibility */
+#backToFirstPageBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10; /* ensure the button is always on top */
+}
+/* Ensure the body uses flexbox layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure the body takes up at least the full viewport height */
+    margin: 0;
+}
+
+/* The main content area */
+#container {
+    flex: 1; /* This ensures that the content takes up remaining space */
+}
+
+/* Footer positioned at the bottom */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Fix the 'Back to First Page' button visibility */
+#backToFirstPageBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10; /* ensure the button is always on top */
+}
